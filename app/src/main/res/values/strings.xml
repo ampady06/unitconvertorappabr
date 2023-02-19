@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="len">
+        <item>metre</item>
+        <item>inch</item>
+        <item>foot</item>
+    </string-array>
+</resources>
