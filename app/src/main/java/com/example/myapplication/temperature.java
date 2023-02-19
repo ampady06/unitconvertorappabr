@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class temperature extends AppCompatActivity {
     TextView output;
+    TextView output2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,9 @@ public class temperature extends AppCompatActivity {
         Double val8 = Double.parseDouble(a8);
         Double conv8 =  273.15 + val8;
         output.setText(String.valueOf(conv8));
+        output2=(TextView)findViewById(R.id.textView7);
+        output2.setText("celsius to kelvin");
+
 
     }
 
@@ -38,6 +42,9 @@ public class temperature extends AppCompatActivity {
         Double val2 = Double.parseDouble(a2);
         Double conv2 = -273.15 + val2;
         output.setText(String.valueOf(conv2));
+        output2=(TextView)findViewById(R.id.textView7);
+        output2.setText("kelvin to celsius");
+
 
     }
 
@@ -49,6 +56,9 @@ public class temperature extends AppCompatActivity {
         Double val3 = Double.parseDouble(a3);
         Double conv3 =  32 + (val3 *1.8);
         output.setText(String.valueOf(conv3));
+        output2=(TextView)findViewById(R.id.textView7);
+        output2.setText("celcius to farenheit");
+
 
     }
 
@@ -60,6 +70,9 @@ public class temperature extends AppCompatActivity {
         Double val4 = Double.parseDouble(a4);
         Double conv4 = 0.556 * (val4 - 32);
         output.setText(String.valueOf(conv4));
+        output2=(TextView)findViewById(R.id.textView7);
+        output2.setText("fahrenheit to celsius");
+
 
     }
 
@@ -71,6 +84,9 @@ public class temperature extends AppCompatActivity {
         Double val5 = Double.parseDouble(a5);
         Double conv5 =32 + ((val5-273.15) *1.8);
         output.setText(String.valueOf(conv5));
+        output2=(TextView)findViewById(R.id.textView7);
+        output2.setText("kelvin to fahrenheit");
+
 
     }
 
@@ -82,6 +98,9 @@ public class temperature extends AppCompatActivity {
         Double val6 = Double.parseDouble(a6);
         Double conv6 = (0.556 * (val6 - 32)) + 273.15;
         output.setText(String.valueOf(conv6));
+        output2=(TextView)findViewById(R.id.textView7);
+        output2.setText("fahrenheit to kelvin");
+
 
     }
 }

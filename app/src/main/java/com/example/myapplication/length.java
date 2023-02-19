@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class length extends AppCompatActivity  {
     TextView output;
+    TextView output2;
 
 
     @Override
@@ -32,6 +33,8 @@ public class length extends AppCompatActivity  {
         Double val = Double.parseDouble(a);
             Double conv = 39.37 * val;
             output.setText(String.valueOf(conv));
+        output2=(TextView)findViewById(R.id.textView2);
+        output2.setText("Metre to Inch");
 
     }
 
@@ -43,6 +46,8 @@ public class length extends AppCompatActivity  {
         Double val2 = Double.parseDouble(a2);
         Double conv2 = 0.0254 * val2;
         output.setText(String.valueOf(conv2));
+        output2=(TextView)findViewById(R.id.textView2);
+        output2.setText("Inch To Metre");
 
     }
 
@@ -54,6 +59,8 @@ public class length extends AppCompatActivity  {
         Double val3 = Double.parseDouble(a3);
         Double conv3 = 0.3048 * val3;
         output.setText(String.valueOf(conv3));
+        output2=(TextView)findViewById(R.id.textView2);
+        output2.setText("Foot To Metre");
 
     }
 
@@ -65,6 +72,8 @@ public class length extends AppCompatActivity  {
         Double val4 = Double.parseDouble(a4);
         Double conv4 = 3.28084 * val4;
         output.setText(String.valueOf(conv4));
+        output2=(TextView)findViewById(R.id.textView2);
+        output2.setText("Metre to Foot");
 
     }
 
@@ -76,6 +85,8 @@ public class length extends AppCompatActivity  {
         Double val5 = Double.parseDouble(a5);
         Double conv5 = 0.0833333 * val5;
         output.setText(String.valueOf(conv5));
+        output2=(TextView)findViewById(R.id.textView2);
+        output2.setText("Inch to foot");
 
     }
 
@@ -87,6 +98,8 @@ public class length extends AppCompatActivity  {
         Double val6 = Double.parseDouble(a6);
         Double conv6 = 12 * val6;
         output.setText(String.valueOf(conv6));
+        output2=(TextView)findViewById(R.id.textView2);
+        output2.setText("foot to inch");
 
     }
 

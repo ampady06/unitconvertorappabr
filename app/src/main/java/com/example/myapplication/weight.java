@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class weight extends AppCompatActivity {
     TextView output;
+    TextView output2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,8 @@ public class weight extends AppCompatActivity {
         Double val = Double.parseDouble(a);
         Double conv = 0.00110231 * val;
         output.setText(String.valueOf(conv));
+        output2=(TextView)findViewById(R.id.textView4);
+        output2.setText("kg to tons");
 
     }
 
@@ -38,6 +41,8 @@ public class weight extends AppCompatActivity {
         Double val2 = Double.parseDouble(a2);
         Double conv2 = 907.185 * val2;
         output.setText(String.valueOf(conv2));
+        output2=(TextView)findViewById(R.id.textView4);
+        output2.setText("tons to kg");
 
     }
 
@@ -49,6 +54,8 @@ public class weight extends AppCompatActivity {
         Double val3 = Double.parseDouble(a3);
         Double conv3 = 2.20462 * val3;
         output.setText(String.valueOf(conv3));
+        output2=(TextView)findViewById(R.id.textView4);
+        output2.setText("kg to pound");
 
     }
 
@@ -60,6 +67,8 @@ public class weight extends AppCompatActivity {
         Double val4 = Double.parseDouble(a4);
         Double conv4 = 0.453592 * val4;
         output.setText(String.valueOf(conv4));
+        output2=(TextView)findViewById(R.id.textView4);
+        output2.setText("pound to kg");
 
     }
 
@@ -71,6 +80,8 @@ public class weight extends AppCompatActivity {
         Double val5 = Double.parseDouble(a5);
         Double conv5 = 0.0005 * val5;
         output.setText(String.valueOf(conv5));
+        output2=(TextView)findViewById(R.id.textView4);
+        output2.setText("pound to ton");
 
     }
 
@@ -82,6 +93,8 @@ public class weight extends AppCompatActivity {
         Double val6 = Double.parseDouble(a6);
         Double conv6 = 2000 * val6;
         output.setText(String.valueOf(conv6));
+        output2=(TextView)findViewById(R.id.textView4);
+        output2.setText("ton to pound");
 
     }
 }

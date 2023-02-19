@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class speed extends AppCompatActivity {
     TextView output;
+    TextView output2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,8 @@ public class speed extends AppCompatActivity {
         Double val = Double.parseDouble(a);
         Double conv = 0.277778 * val;
         output.setText(String.valueOf(conv));
+        output2=(TextView)findViewById(R.id.textView5);
+        output2.setText("km/hr to m/s");
 
     }
 
@@ -38,6 +41,8 @@ public class speed extends AppCompatActivity {
         Double val2 = Double.parseDouble(a2);
         Double conv2 = 3.6 * val2;
         output.setText(String.valueOf(conv2));
+        output2=(TextView)findViewById(R.id.textView5);
+        output2.setText("m/s to km/hr");
 
     }
 }
